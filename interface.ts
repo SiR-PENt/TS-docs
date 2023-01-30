@@ -8,7 +8,7 @@ interface User {
 
   // methods in interface
    startTrail: () => string // this means that, this is a method that must return a string
-   anotherTrail(): string // another way of declaring methods
+   anotherTrail(): string // another way of declaring methods(preferable)
    getCouponName(couponname: string): number // this means that this method should take an argument of type string and return a value of type number
 
 }
@@ -44,7 +44,6 @@ const hitesh: Admin = {
     githubToken: 'github',
 
     role: 'admin',
-
 }
 
 hitesh.email = 'h@h.com'

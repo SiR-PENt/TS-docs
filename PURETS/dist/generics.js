@@ -17,4 +17,31 @@ function identityFour(val) {
     return val;
 }
 //when you create your custom type, the generic type should be called like this
-identityFour({ brand: 'Ace', type: 'whiskey' });
+const id = identityFour({ brand: 'Ace', type: 'whiskey' });
+// example getSearchProducts below
+// when returning a value, you have to return a value of data type T
+function getSearchProducts(products) {
+    const myIndex = 3;
+    return products[myIndex];
+}
+//  syntax for arrow functions
+const getMoreearchProducts = (products) => {
+    // do some database operations
+    const myIndex = 4;
+    return products[myIndex];
+};
+function anotherFuntion(valOne, valTwo) {
+    return {
+        valOne, valTwo
+    };
+}
+anotherFuntion(3, { connection: 'hi', username: 'low', password: 'hilow' });
+//creating a generic class
+class Sellable {
+    constructor() {
+        this.cart = [];
+    }
+    addToCart(product) {
+        this.cart.push(product);
+    }
+}
